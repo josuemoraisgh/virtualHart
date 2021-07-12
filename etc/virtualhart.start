@@ -1,0 +1,25 @@
+function virtualhartlib = startModule()
+    TOOLBOX_NAME  = "virtualhart";
+    TOOLBOX_TITLE = "Virtual Hart";
+
+    if isdef("virtualhartlib") then
+        warning("virtualhartlib is already loaded");
+        return;
+    end
+
+    etc_virtualhart  = get_absolute_file_path("virtualhart.start");
+    etc_virtualhart  = getshortpathname(etc_virtualhart);
+    root_virtualhart = strncpy( etc_virtualhart, length(etc_virtualhart)-length("\etc\") );
+    //Load  functions library
+    // =============================================================================
+    pathmacros = pathconvert( root_virtualhart ) + "macros" + filesep();
+    virtualhartlib = lib(pathmacros);
+
+endfunction
+
+virtualhartlib = startModule();
+clear startModule;
+
+global %VirtualHartPath
+%VirtualHartPath = get_absolute_file_path("virtualhart.start");
+%VirtualHartPath = fullpath(%VirtualHartPath+'..\');
