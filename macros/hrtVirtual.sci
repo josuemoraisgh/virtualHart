@@ -20,7 +20,7 @@ function hrtVirtual()
 
     //Organização dos Frames
     // A tela terá 3 frames sendo cada um uma linha onde a informação será apresentada
-    l1Frame = uicontrol(main_fig,'layout', 'gridbag',..
+    l1Fame = uicontrol(main_fig,'layout', 'gridbag',..
                 'style', 'frame',..
                 'constraints', createConstraints("gridbag",[1, 1, 1, 1], [1, 0.05], "both"));
     l2Frame = uicontrol(main_fig,'layout', 'gridbag', ...
