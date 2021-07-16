@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scilablib name="rltoollib">
+  <macro name="hold" file="hold.bin" md5="7aebac8eb033214b720c0f2fc55a4f58"/>
   <macro name="hrtAquisicao" file="hrtAquisicao.bin" md5="e9415fe12a2e957135b3ed4c40bf3fa3"/>
   <macro name="hrtCommand" file="hrtCommand.bin" md5="f6722dcbea1908a53bb85423fe51d539"/>
   <macro name="hrtCommandAnswer" file="hrtCommandAnswer.bin" md5="f5c52c04979a85ce680c8868291c6be2"/>
