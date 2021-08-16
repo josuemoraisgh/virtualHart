@@ -15,13 +15,4 @@ extern "C" SKELETON_C_GW_IMPEXP int skeleton_c(wchar_t* _pwstFuncName);
 
 
 
-
-
-
-
-
-
-
-
-
 #endif /* __SKELETON_C_GW_HXX__ */

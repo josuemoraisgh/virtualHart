@@ -7,8 +7,8 @@ mode(-1);
 lines(0);
 
 function main_builder()
-    TOOLBOX_NAME  = "toolbox_skeleton";
-    TOOLBOX_TITLE = "Toolbox Skeleton";
+    TOOLBOX_NAME  = "virtualHartSci";
+    TOOLBOX_TITLE = "Virtual Hart";
     toolbox_dir   = get_absolute_file_path("builder.sce");
 
     // Check Scilab's version
