@@ -1,7 +1,4 @@
 function strAnswer = hrtCommand(strCommand,strFrame)
-    //
-    //Comandos hart - Highway Addressable Remote Transducer
-    //
     global configTrms
     select strCommand
         case '0' then //Comand 00 - Identity Command

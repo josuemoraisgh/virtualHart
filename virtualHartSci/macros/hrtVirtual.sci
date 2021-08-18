@@ -1,7 +1,7 @@
 function hrtVirtual()
     // Construção Gráfica
     global main_fig configTrms selectedSheet %VirtualHartPath
-    path = %VirtualHartPath+'images\configHart.xls';
+    path = getlongpathname(%VirtualHartPath)+'images\configHart.xls';
     [_,sheetsName,_] = xlinfo(path);
     selectedSheet = 1;
     dimensaoTela = get(0, "screensize_px");

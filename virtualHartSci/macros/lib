@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scilablib name="rltoollib">
-  <macro name="hold" file="hold.bin" md5="7aebac8eb033214b720c0f2fc55a4f58"/>
   <macro name="hrtAquisicao" file="hrtAquisicao.bin" md5="e9415fe12a2e957135b3ed4c40bf3fa3"/>
-  <macro name="hrtCommand" file="hrtCommand.bin" md5="f6722dcbea1908a53bb85423fe51d539"/>
+  <macro name="hrtCommand" file="hrtCommand.bin" md5="1d0dac630dd9b13e145cf02ac98eff0c"/>
   <macro name="hrtCommandAnswer" file="hrtCommandAnswer.bin" md5="f5c52c04979a85ce680c8868291c6be2"/>
   <macro name="hrtFrameADDRESS" file="hrtFrameADDRESS.bin" md5="732e4d267ea3a5e628654f69a0b04e64"/>
   <macro name="hrtFrameBody" file="hrtFrameBody.bin" md5="3eb745b5b44c5e488cd7c62793f1ae70"/>
@@ -19,7 +18,7 @@
   <macro name="hrtSerialClose" file="hrtSerialClose.bin" md5="60659ad8c03424b5d45c1b9ba46631b8"/>
   <macro name="hrtSerialCloseAll" file="hrtSerialCloseAll.bin" md5="40dd57a4cdbbee21b366f77e54d4f07f"/>
   <macro name="hrtSerialOpen" file="hrtSerialOpen.bin" md5="58d4e86880dc6209f80cb4c06d497d5c"/>
-  <macro name="hrtSerialRead" file="hrtSerialRead.bin" md5="8b26d85f91dffd7db8ff2e01eda23d2f"/>
+  <macro name="hrtSerialRead" file="hrtSerialRead.bin" md5="1bfde710406f973e9922e0cfe67cc90d"/>
   <macro name="hrtSerialStatus" file="hrtSerialStatus.bin" md5="01edbdca647777e730f041726404dea2"/>
   <macro name="hrtSerialWrite" file="hrtSerialWrite.bin" md5="78daecfd720d0eac62c428b36b787277"/>
   <macro name="hrtTypeDate2Hex" file="hrtTypeDate2Hex.bin" md5="2be8b7e2d74de686ca9c54c759b16e66"/>
@@ -34,5 +33,5 @@
   <macro name="hrtTypeSReal2Hex" file="hrtTypeSReal2Hex.bin" md5="f5b9ec69d89641421e42c1f3691152bd"/>
   <macro name="hrtTypeTime2Hex" file="hrtTypeTime2Hex.bin" md5="72e60f1c295a3615d02ea26b5eacc1e4"/>
   <macro name="hrtTypeUInt2Hex" file="hrtTypeUInt2Hex.bin" md5="ae1eeddb9797ad4ff67b71f15bd3d433"/>
-  <macro name="hrtVirtual" file="hrtVirtual.bin" md5="7184a140a4c5044a9010e7958fab514d"/>
+  <macro name="hrtVirtual" file="hrtVirtual.bin" md5="3a6043c74dffbbaa22e6e7706a38f979"/>
 </scilablib>
