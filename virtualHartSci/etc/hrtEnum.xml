@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<root>
+  <Enumerated1 desc="Table 1. Device Type Codes">
+    <n_1>LD301</n_1>
+    <n_2>TT301</n_2>
+    <n_3>TT301</n_3>
+    <n_4>TT301</n_4>
+    <n_5>TT301</n_5>
+    <n_6>DT301</n_6>
+    <n_7>FY400</n_7>
+  </Enumerated1>
+  <Enumerated2 desc="Table 2. Engineering Unit Codes">
+    <n_1>inches of water at 68 degrees F</n_1>
+    <n_2>inches of mercury at 0 degrees C</n_2>
+    <n_3>feet of water at 68 degrees F</n_3>
+    <n_4>millimeters of water at 68 degrees F</n_4>
+    <n_5>millimeters of mercury at 0 degrees C</n_5>
+    <n_6>pounds per square inch</n_6>
+    <n_7>bars</n_7>
+    <n_32>Degrees Celsius</n_32>
+    <n_33>Degrees Fahrenheit</n_33>
+    <n_34>Degrees Rankine</n_34>
+    <n_35> Kelvin</n_35>
+  </Enumerated2>
+  <Enumerated3 desc="Table 3. Transfer Function Codes"/>
+  <Enumerated4 desc="Table 4. Material Codes"/>
+  <Enumerated6 desc="Table 6. Alarm Selection Codes"/>
+  <Enumerated7 desc="Table 7. Write Protect Codes"/>
+  <Enumerated8 desc="Table 8. Manufacturer Identification Codes"/>
+  <Enumerated9 desc="Table 9. Burst Mode Control Codes"/>
+  <Enumerated10 desc="Table 10. Physical Signaling Codes"/>
+  <Enumerated11 desc="Table 11. Flag Assignments"/>
+  <Enumerated12 desc="Table 12. Transfer Service Function Codes"/>
+  <Enumerated13 desc="Table 13. Transfer Service Identifier Codes"/>
+  <Enumerated14 desc="Table 14. Operating Mode Codes"/>
+  <Enumerated15 desc="Table 15. Analog Output Numbers Codes"/>
+  <Enumerated16 desc="Table 16. Loop Current Mode Codes"/>
+  <Enumerated17 desc="Table 17. Extended Device Status Codes"/>
+  <Enumerated18 desc="Table 18. Lock Device Codes"/>
+  <Enumerated19 desc="Table 19. Write Device Variable Codes"/>
+  <Enumerated20 desc="Table 20. Device Variable Family Codes"/>
+  <Enumerated21 desc="Table 21. Device Variable Classification Codes"/>
+  <Enumerated22 desc="Table 22. Trim Point Codes"/>
+  <Enumerated23 desc="Table 23.  Capture Mode Codes"/>
+  <Enumerated24 desc="Table 24.  Physical Layer Type Codes"/>
+  <Enumerated25 desc="Table 25.  Lock Device Status"/>
+  <Enumerated26 desc="Table 26.  Analog Channel Flags"/>
+</root>

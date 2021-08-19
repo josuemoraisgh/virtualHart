@@ -1,11 +1,11 @@
-function xlsOpen(nomearq)
+function ret = xlsOpen(nomearq)
     if xls_IsExcelRunning() == %f then
         xls_NewExcel();
     else
         xls_RecoverExcel();
     end
-    xls_Open(nomearq);
-    xls_setProperty("Application", "Visible", 0); 
+    xls_setProperty("Application", "Visible", 0);    
+    ret = xls_Open(nomearq); 
 endfunction
 
 function worksheet = findWorksheet()
@@ -40,7 +40,7 @@ function [totalLinha, totalColuna] = xlsRegiaoDados(Worksheet,linhaIni)
     end
     totalLinha = totalLinha-1;    
     for totalColuna = 1:65536
-        xls_callMethod("worksheet", "Cells", list(totalLinha,totalColuna));
+        xls_callMethod("worksheet", "Cells", list(1,totalColuna));
         if isempty(xls_getProperty("Cell", "Value"))
             break;
         end
@@ -48,16 +48,15 @@ function [totalLinha, totalColuna] = xlsRegiaoDados(Worksheet,linhaIni)
     totalColuna = totalColuna-1;
 endfunction
 
-function geraEnumeratedXml()
+function hrtEnum2Xml()
   linhaIni=3;
-  nomearq = uigetfile("*.xls",pwd());//Abre no diretorio corrente um gestor de arquivos 
-  if isempty(nomearq) then    
-      disp("Ação cancelada pelo usuário!!")
+  path = get_absolute_file_path('hrtEnum2Xml.sce');
+  ret = xlsOpen(path+filesep()+"hrtEnum"+".xls");
+  if ret == %f then    
+      disp("Não foi possivel abrir o Arquivo!!")
   else
-    [path,fname,extension]=fileparts(nomearq);
-    doc = xmlDocument(path+filesep()+fname+".xml");
+    doc = xmlDocument(path+filesep()+"hrtEnum"+".xml");
     root = xmlElement(doc, "root");
-    xlsOpen(nomearq);
     worksheet = findWorksheet();
     for i=1:size(worksheet,1)
         root.children(i) = xmlElement(doc,worksheet(i));
@@ -84,9 +83,9 @@ function geraEnumeratedXml()
     xls_Close();// close Workbook
     xls_Quit(); // quit excel
     doc.root = root;
-    xmlWrite(doc, path+filesep()+fname+".xml");
+    xmlWrite(doc,path+filesep()+"hrtEnum"+".xml");
   end
 endfunction
 
 
-geraEnumeratedXml();
+hrtEnum2Xml();
