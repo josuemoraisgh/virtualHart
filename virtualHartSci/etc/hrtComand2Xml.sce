@@ -50,40 +50,35 @@ endfunction
 
 function hrtComand2Xml()
   linhaIni=3;
-  path = get_absolute_file_path('hrtEnum2Xml.sce');
-  ret = xlsOpen(path+filesep()+"hrtEnum"+".xls");
+  path = get_absolute_file_path('hrtComand2Xml.sce');
+  ret = xlsOpen(path+filesep()+"hrtComand"+".xls");
   if ret == %f then    
       disp("Não foi possivel abrir o Arquivo!!")
   else
-    doc = xmlDocument(path+filesep()+"hrtEnum"+".xml");
+    doc = xmlDocument(path+filesep()+"hrtComand"+".xml");
     root = xmlElement(doc, "root");
     worksheet = findWorksheet();
-    for i=1:size(worksheet,1)
-        root.children(i) = xmlElement(doc,worksheet(i));
-        root.children(i).attributes.desc = getDados(worksheet(i),1,1);
+    for i=2:size(worksheet,1)
+        root.children(i-1) = xmlElement(doc,strsubst(worksheet(i)," ",""));
+        aux = getDados(worksheet(i),1,1);
+        if aux <> [] then
+            root.children(i-1).attributes.desc = aux;
+        end
         [totalLinha, totalColuna] = xlsRegiaoDados(worksheet(i),linhaIni)
         if totalLinha > 0 then
-            for j=1:totalLinha
-                try
-                aux = getDados(worksheet(i),linhaIni+j,1);
+            for j=1:totalLinha-linhaIni
+                root.children(i-1).children(j) = xmlElement(doc,"item_" + string(j));
+                aux = getDados(worksheet(i),linhaIni+j-1,2);
                 if aux <> [] then
-                    root.children(i).children(j) = xmlElement(doc,"n_" + string(aux));
+                    root.children(i-1).children(j).content = string(aux);
                 end
-                aux = getDados(worksheet(i),linhaIni+j,2);
-                if aux <> [] then
-                    root.children(i).children(j).content = string(aux);
-                end
-            catch
-                pause;
-                end
-                
             end
         end
     end
     xls_Close();// close Workbook
     xls_Quit(); // quit excel
     doc.root = root;
-    xmlWrite(doc,path+filesep()+"hrtEnum"+".xml");
+    xmlWrite(doc,path+filesep()+"hrtComand"+".xml");
   end
 endfunction
 

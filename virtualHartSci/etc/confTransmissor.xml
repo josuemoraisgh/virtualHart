@@ -1,6 +1,22 @@
 <?xml version="1.0"?>
 <root>
-  <Config>
+  <Config desc="NAME">
+    <frame_type>
+      <BYTE_SIZE>1</BYTE_SIZE>
+      <TYPE>UNSIGNED</TYPE>
+      <TT301>06</TT301>
+      <LD301>06</LD301>
+      <FY301>06</FY301>
+      <DT301>06</DT301>
+    </frame_type>
+    <address_type>
+      <BYTE_SIZE>1</BYTE_SIZE>
+      <TYPE>UNSIGNED</TYPE>
+      <TT301>00</TT301>
+      <LD301>00</LD301>
+      <FY301>00</FY301>
+      <DT301>00</DT301>
+    </address_type>
     <error_code>
       <BYTE_SIZE>2</BYTE_SIZE>
       <TYPE>ENUMERATED</TYPE>
@@ -124,35 +140,75 @@
     <tag>
       <BYTE_SIZE>8</BYTE_SIZE>
       <TYPE>PACKED_ASCII</TYPE>
-      <TT301>TT301</TT301>
-      <LD301>LD301</LD301>
-      <FY301>FY301</FY301>
-      <DT301>DT301</DT301>
+      <TT301>51 4C F0 C6 08 20 (TT301)</TT301>
+      <LD301>30 4C F0 C6 08 20 (LD301)</LD301>
+      <FY301>19 9C F0 C6 08 20 (FY301)</FY301>
+      <DT301>11 4C F0 C6 08 20 (DT301)</DT301>
     </tag>
     <message>
       <BYTE_SIZE>32</BYTE_SIZE>
       <TYPE>PACKED_ASCII</TYPE>
-      <TT301>MEDIDOR DE TEMPERATURA</TT301>
-      <LD301>MEDIDOR DE PRESSAO</LD301>
-      <FY301>POSICIONADOR DE VALVULA</FY301>
-      <DT301>MEDIDOR DE DENSIDADE</DT301>
+      <TT301>34 51 09 10 F4 A0 10 58 14 14 D4 05 48 15 15 48 18 20 82 08 20 82 08 20 (MEDIDOR DE TEMPERATURA)</TT301>
+      <LD301>34 51 09 10 F4 A0 10 58 10 48 54 D3 04 F8 20 82 08 20 82 08 20 82 08 20 (MEDIDOR DE PRESSAO)</LD301>
+      <FY301>40 F4 C9 0C 93 CE 04 43 D2 80 41 60 58 13 16 54 C0 60 82 08 20 82 08 20 (POSICIONADOR DE VALVULA)</FY301>
+      <DT301>34 51 09 10 F4 A0 10 58 04 14 E4 C9 10 11 05 82 08 20 82 08 20 82 08 20 (MEDIDOR DE DENSIDADE)</DT301>
     </message>
     <descriptor>
       <BYTE_SIZE>16</BYTE_SIZE>
       <TYPE>PACKED_ASCII</TYPE>
-      <TT301>TEMPERATURA</TT301>
-      <LD301>PRESSAO</LD301>
-      <FY301>POSICIONADOR</FY301>
-      <DT301>DENSIDADE</DT301>
+      <TT301>50 53 50 15 20 54 55 20 60 82 08 20 (TEMPERATURA)</TT301>
+      <LD301>41 21 53 4C 13 E0 82 08 20 82 08 20 (PRESSAO)</LD301>
+      <FY301>40 F4 C9 0C 93 CE 04 43 D2 82 08 20 (POSICIONADOR)</FY301>
+      <DT301>10 53 93 24 40 44 16 08 20 82 08 20 (DENSIDADE)</DT301>
     </descriptor>
     <date>
       <BYTE_SIZE>3</BYTE_SIZE>
       <TYPE>DATE</TYPE>
-      <TT301>19/08/2021</TT301>
-      <LD301>19/08/2021</LD301>
-      <FY301>19/08/2021</FY301>
-      <DT301>19/08/2021</DT301>
+      <TT301>13 08 79 (19/08/2021)</TT301>
+      <LD301>13 08 79 (19/08/2021)</LD301>
+      <FY301>13 08 79 (19/08/2021)</FY301>
+      <DT301>13 08 79 (19/08/2021)</DT301>
     </date>
+    <upper_range_value>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301>44 54 80 00 (850)</TT301>
+      <LD301>44 54 80 00 (850)</LD301>
+      <FY301>44 54 80 00 (850)</FY301>
+      <DT301>44 54 80 00 (850)</DT301>
+    </upper_range_value>
+    <lower_range_value>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301>C3 48 00 00 (-200)</TT301>
+      <LD301>C3 48 00 00 (-200)</LD301>
+      <FY301>C3 48 00 00 (-200)</FY301>
+      <DT301>C3 48 00 00 (-200)</DT301>
+    </lower_range_value>
+    <PROCESS_VARIABLE>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301>42 48 00 00 (50)</TT301>
+      <LD301>42 48 00 00 (50)</LD301>
+      <FY301>42 48 00 00 (50)</FY301>
+      <DT301>42 48 00 00 (50)</DT301>
+    </PROCESS_VARIABLE>
+    <percent_of_range>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301>$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</TT301>
+      <LD301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</LD301>
+      <FY301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</FY301>
+      <DT301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</DT301>
+    </percent_of_range>
+    <loop_current>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301>$(percent_of_range*0.16)+4</TT301>
+      <LD301>$(percent_of_range*0.16)+4</LD301>
+      <FY301>$(percent_of_range*0.16)+4</FY301>
+      <DT301>$(percent_of_range*0.16)+4</DT301>
+    </loop_current>
     <write_protect>
       <BYTE_SIZE>1</BYTE_SIZE>
       <TYPE>ENUMERATED</TYPE>
@@ -689,6 +745,22 @@
       <FY301/>
       <DT301/>
     </cal_point>
+    <SETPOINT>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301/>
+      <LD301/>
+      <FY301/>
+      <DT301/>
+    </SETPOINT>
+    <MANIPULATED_VARIABLE>
+      <BYTE_SIZE>4</BYTE_SIZE>
+      <TYPE>FLOAT</TYPE>
+      <TT301/>
+      <LD301/>
+      <FY301/>
+      <DT301/>
+    </MANIPULATED_VARIABLE>
     <CONTROLLER_TYPE>
       <BYTE_SIZE>1</BYTE_SIZE>
       <TYPE>ENUMERATED</TYPE>
@@ -721,30 +793,6 @@
       <FY301/>
       <DT301/>
     </unit_code>
-    <PROCESS_VARIABLE>
-      <BYTE_SIZE>4</BYTE_SIZE>
-      <TYPE>FLOAT</TYPE>
-      <TT301>50</TT301>
-      <LD301>50</LD301>
-      <FY301>50</FY301>
-      <DT301>50</DT301>
-    </PROCESS_VARIABLE>
-    <SETPOINT>
-      <BYTE_SIZE>4</BYTE_SIZE>
-      <TYPE>FLOAT</TYPE>
-      <TT301/>
-      <LD301/>
-      <FY301/>
-      <DT301/>
-    </SETPOINT>
-    <MANIPULATED_VARIABLE>
-      <BYTE_SIZE>4</BYTE_SIZE>
-      <TYPE>FLOAT</TYPE>
-      <TT301/>
-      <LD301/>
-      <FY301/>
-      <DT301/>
-    </MANIPULATED_VARIABLE>
     <SETPOINT_TRACKING_MODE>
       <BYTE_SIZE>1</BYTE_SIZE>
       <TYPE>ENUMERATED</TYPE>
@@ -881,22 +929,6 @@
       <FY301/>
       <DT301/>
     </range_units>
-    <upper_range_value>
-      <BYTE_SIZE>4</BYTE_SIZE>
-      <TYPE>FLOAT</TYPE>
-      <TT301>850</TT301>
-      <LD301>100</LD301>
-      <FY301>850</FY301>
-      <DT301>100</DT301>
-    </upper_range_value>
-    <lower_range_value>
-      <BYTE_SIZE>4</BYTE_SIZE>
-      <TYPE>FLOAT</TYPE>
-      <TT301>-200</TT301>
-      <LD301>0</LD301>
-      <FY301>-200</FY301>
-      <DT301>0</DT301>
-    </lower_range_value>
     <alarm_0_action>
       <BYTE_SIZE>1</BYTE_SIZE>
       <TYPE>ENUMERATED</TYPE>

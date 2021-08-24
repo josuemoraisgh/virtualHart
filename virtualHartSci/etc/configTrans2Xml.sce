@@ -58,7 +58,7 @@ function configTrans2Xml()
     root = xmlElement(doc, "root");
     worksheet = findWorksheet();
     root.children(1) = xmlElement(doc,worksheet(1));
-    //root.children(1).attributes.desc = getDados(worksheet(1),1,1);
+    root.children(1).attributes.desc = getDados(worksheet(1),1,1);
     linhaIni=1;
     [totalLinha, totalColuna] = xlsRegiaoDados(worksheet(1),linhaIni)
     if totalLinha > 0 then
@@ -66,7 +66,7 @@ function configTrans2Xml()
             if totalColuna > 0 then
                 aux = getDados(worksheet(1),linhaIni+j,1);
                 if aux <> [] then
-                    root.children(1).children(j) = xmlElement(doc,string(aux));
+                    root.children(1).children(j) = xmlElement(doc,strsubst(aux," ",""));
                     for i=2:totalColuna
                         aux = getDados(worksheet(1),1,i);
                         aux1 = getDados(worksheet(1),linhaIni+j,i);                            
@@ -74,7 +74,7 @@ function configTrans2Xml()
                             aux1 = ""
                         end
                         if aux <> [] then
-                            root.children(1).children(j).children(i-1) = xmlElement(doc,string(aux));
+                            root.children(1).children(j).children(i-1) = xmlElement(doc,strsubst(aux," ",""));
                             root.children(1).children(j).children(i-1).content = string(aux1);
                         end
                     end                    

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<root>
+  <hrtCmd0 desc="Comando 0 - Ver 5.2 Long Frame">
+    <item_1>error_code</item_1>
+    <item_2>$FE (Device&#x2002;Type&#x2002;Code&#x2002;for&#x2002;Expansion)</item_2>
+    <item_3/>
+    <item_4>device_type</item_4>
+    <item_5>request_preambles (Minimum number of Preambles required)</item_5>
+    <item_6>hart_revision (HART Protocol Major Revision)</item_6>
+    <item_7>software_revision (Revision&#x2002;Level&#x2002;of&#x2002;the&#x2002;Universal&#x2002;Command)</item_7>
+    <item_8>transmitter_revision (Revision&#x2002;Level&#x2002;of&#x2002;the&#x2002;Transmitter-Specific&#x2002;Document)</item_8>
+    <item_9>hardware_revision (Hardware&#x2002;Revision&#x2002;Level&#x2002;of&#x2002;the&#x2002;electronics)</item_9>
+    <item_10>device_flags (Flags Assignments)</item_10>
+  </hrtCmd0>
+  <hrtCmd1 desc="Comando 1 - Ver 5.2 (Read Primary Variable)">
+    <item_1>error_code</item_1>
+    <item_2>unit_code (Primary Variable Units)</item_2>
+  </hrtCmd1>
+  <hrtCmd2 desc="Comando 2 - Ver 5.2 (Read Loop Current And Percent Of Range)">
+    <item_1>error_code</item_1>
+    <item_2>loop_current (Loop Current: milli-amperes)</item_2>
+  </hrtCmd2>
+  <hrtCmd3Geovani/>
+  <hrtCmd6Rai/>
+  <hrtCmd7JoaoPedro/>
+  <hrtCmd12Thael/>
+  <hrtCmd13Adriel/>
+  <hrtCmd14Samuel/>
+  <hrtCmd15/>
+  <hrtCmd16/>
+  <hrtCmd17/>
+  <hrtCmd18 desc="hrtCmd"/>
+  <hrtCmd19/>
+  <hrtCmd33/>
+  <hrtCmd38/>
+  <hrtCmd40/>
+  <hrtCmd41/>
+  <hrtCmd42/>
+  <hrtCmd45/>
+  <hrtCmd46/>
+  <hrtCmd80/>
+  <hrtCmd130/>
+  <hrtCmd132/>
+  <hrtCmd135/>
+  <hrtCmd136/>
+  <hrtCmd138/>
+  <hrtCmd140/>
+  <hrtCmd152/>
+  <hrtCmd162/>
+  <hrtCmd164/>
+  <hrtCmd166/>
+  <hrtCmd168/>
+  <hrtCmd173/>
+  <hrtCmd185/>
+  <hrtCmd187/>
+  <hrtCmd198/>
+  <hrtCmd223/>
+</root>
