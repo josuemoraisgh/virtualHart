@@ -72,10 +72,14 @@ function configTrans2Xml()
                         aux1 = getDados(worksheet(1),linhaIni+j,i);                            
                         if aux1 == [] then
                             aux1 = ""
+                        elseif strindex(string(aux1),'/\$/','r')(1) <> 1
+                            aux1 = strsubst(string(aux1),'/ \([\s\S]+\)/','','r');
+                        else
+                            aux1 = string(aux1);
                         end
                         if aux <> [] then
                             root.children(1).children(j).children(i-1) = xmlElement(doc,strsubst(aux," ",""));
-                            root.children(1).children(j).children(i-1).content = string(aux1);
+                            root.children(1).children(j).children(i-1).content = aux1;
                         end
                     end                    
                 end
