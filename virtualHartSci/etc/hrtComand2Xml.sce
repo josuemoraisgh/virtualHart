@@ -49,7 +49,7 @@ function [totalLinha, totalColuna] = xlsRegiaoDados(Worksheet,linhaIni)
 endfunction
 
 function hrtComand2Xml()
-  linhaIni=3;
+  linhaIni=4;
   path = get_absolute_file_path('hrtComand2Xml.sce');
   ret = xlsOpen(path+filesep()+"hrtComand"+".xls");
   if ret == %f then    
@@ -61,16 +61,22 @@ function hrtComand2Xml()
     for i=2:size(worksheet,1)
         root.children(i-1) = xmlElement(doc,strsubst(worksheet(i)," ",""));
         aux = getDados(worksheet(i),1,1);
-        if aux <> [] then
+        aux1 = getDados(worksheet(i),2,2);
+        if aux <> [] && aux1 <> [] then
             root.children(i-1).attributes.desc = aux;
+            try
+            root.children(i-1).attributes.NBBody = strsubst(strsubst(aux1,'/\([\s\S]+\)/','','r')," ","");
+        catch
+            pause;
+            end
         end
         [totalLinha, totalColuna] = xlsRegiaoDados(worksheet(i),linhaIni)
         if totalLinha > 0 then
-            for j=1:totalLinha-linhaIni
+            for j=1:totalLinha-linhaIni+1
                 root.children(i-1).children(j) = xmlElement(doc,"item_" + string(j));
                 aux = getDados(worksheet(i),linhaIni+j-1,2);
                 if aux <> [] then
-                    root.children(i-1).children(j).content = string(aux);
+                    root.children(i-1).children(j).content = strsubst(strsubst(aux,'/\([\s\S]+\)/','','r')," ","");
                 end
             end
         end

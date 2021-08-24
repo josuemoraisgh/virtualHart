@@ -197,9 +197,9 @@
       <BYTE_SIZE>4</BYTE_SIZE>
       <TYPE>FLOAT</TYPE>
       <TT301>$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</TT301>
-      <LD301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</LD301>
-      <FY301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</FY301>
-      <DT301>'$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</DT301>
+      <LD301>$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</LD301>
+      <FY301>$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</FY301>
+      <DT301>$100 * (PROCESS_VARIABLE - lower_range_value) / (upper_range_value - lower_range_value)</DT301>
     </percent_of_range>
     <loop_current>
       <BYTE_SIZE>4</BYTE_SIZE>
