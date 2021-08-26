@@ -1,5 +1,5 @@
 function retorno = startModule()
-    global %VirtualHartPath
+    global %VirtualHartPath TOOLBOX_NAME TOOLBOX_TITLE
     
     mprintf("Start " + TOOLBOX_TITLE + "\n");
     

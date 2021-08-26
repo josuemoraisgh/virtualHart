@@ -55,10 +55,8 @@ function configTrans2Xml()
       disp("Não foi possivel abrir o Arquivo!!")
   else
     doc = xmlDocument(path+filesep()+"confTransmissor"+".xml");
-    root = xmlElement(doc, "root");
     worksheet = findWorksheet();
-    root.children(1) = xmlElement(doc,worksheet(1));
-    root.children(1).attributes.desc = getDados(worksheet(1),1,1);
+    root = xmlElement(doc, worksheet(1));
     linhaIni=1;
     [totalLinha, totalColuna] = xlsRegiaoDados(worksheet(1),linhaIni)
     if totalLinha > 0 then
@@ -66,7 +64,7 @@ function configTrans2Xml()
             if totalColuna > 0 then
                 aux = getDados(worksheet(1),linhaIni+j,1);
                 if aux <> [] then
-                    root.children(1).children(j) = xmlElement(doc,strsubst(aux," ",""));
+                    root.children(j) = xmlElement(doc,strsubst(aux," ",""));
                     for i=2:totalColuna
                         aux = getDados(worksheet(1),1,i);
                         aux1 = getDados(worksheet(1),linhaIni+j,i);                            
@@ -78,8 +76,8 @@ function configTrans2Xml()
                             aux1 = string(aux1);
                         end
                         if aux <> [] then
-                            root.children(1).children(j).children(i-1) = xmlElement(doc,strsubst(aux," ",""));
-                            root.children(1).children(j).children(i-1).content = aux1;
+                            root.children(j).children(i-1) = xmlElement(doc,strsubst(aux," ",""));
+                            root.children(j).children(i-1).content = aux1;
                         end
                     end                    
                 end
