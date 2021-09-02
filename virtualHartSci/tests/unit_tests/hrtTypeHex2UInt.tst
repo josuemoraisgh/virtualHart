@@ -1,0 +1,1 @@
+hrtTypeHex2UInt(strUInt)

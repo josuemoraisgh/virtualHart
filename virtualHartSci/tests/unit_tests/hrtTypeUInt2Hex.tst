@@ -1,0 +1,1 @@
+hrtTypeUInt2Hex(ValorUInt)  
