@@ -1,4 +1,4 @@
-function buf=hrtSerialRead(h,n) 
+function buf=serialCommRead(h,n) 
 // Faz a leitura em Hexadecimal de uma porta serial
 // Calling Sequence
 // buf=hrtSerialRead(h,n)

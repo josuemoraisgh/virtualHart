@@ -1,4 +1,4 @@
-function result=hrtSerialWrite(h,buf)
+function result=serialCommWrite(h,buf)
 //  12/1/2009: corrected version after report of bug 3829  
    if ~exists("buf","local") then 
       TCL_EvalStr("set writeresult [catch {flush "+h+"}]")

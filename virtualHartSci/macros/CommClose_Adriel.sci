@@ -1,4 +1,4 @@
-function result=hrtSerialClose(h)
+function result=SerialClose(h)
   TCL_EvalStr("set closeresult [catch {close "+string(h)+"}]"); 
   result=-evstr(TCL_GetVar("closeresult"));
   if result==0  then

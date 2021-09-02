@@ -1,4 +1,4 @@
-function h=hrtSerialOpen(p,smode,translation,handshake,xchar,timeout)
+function h=serialCommOpen(p,smode,translation,handshake,xchar,timeout)
 //port name
   if ~exists("p","local") then p=1; end
   if type(p)==1 | type(p)==8 then
