@@ -26,7 +26,7 @@ function result=SerialClose(h)
   if result==0  then
       disp('A porta serial foi fechada');
   else
-      hrtSerialCloseAll();
+      serialCommCloseAll();
       disp('Todas portas seriais abertas no Scilab foram fechadas');
   end
   
