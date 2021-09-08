@@ -4,7 +4,7 @@ function result=hrtTypeUInt2Hex(ValorUInt)
 // result=hrtTypeUInt2Hex(ValorUInt) 
 // Parameters
 // ValorUInt : Variável que armazena o valor inteiro
-// result : 
+// result : Variável que recebe o valor da função
 // Description
 // Função que converte valores inteiro sem sinal para hexa
 // Exemplo
