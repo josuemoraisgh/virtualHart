@@ -27,10 +27,6 @@ function vpcGuiAquisicao(varargin)
         commCloseAll();
         serial = commOpen(porta,baudRate+','+paridade+','+dataBits+','+stopBits); 
         while get('BConectar','Enable') == 'off' do
-            tabs = get('tabs').Children; 
-            for i=1:size(tabs,1)
-                configTrms(:,4+i) = tabs(i).Children.String(:,3);
-            end 
             [n,status] = commStatus(serial);
             if(n(1)>0)then
                 strFrame=commRead(serial,n(1));

@@ -37,7 +37,7 @@
   <macro name="vpcBDReadTranslated" file="vpcBDReadTranslated.bin" md5="8b451e3689248cd6f433bdada05d9237"/>
   <macro name="vpcBDWriteTranslated" file="vpcBDWriteTranslated.bin" md5="b7f48d330c47c5b0dfcc5bff7e934bfa"/>
   <macro name="vpcGui" file="vpcGui.bin" md5="62807f448930159edc4421267d1ea83a"/>
-  <macro name="vpcGuiAquisicao" file="vpcGuiAquisicao.bin" md5="1921c59b304cc00051571e08622de6ec"/>
+  <macro name="vpcGuiAquisicao" file="vpcGuiAquisicao.bin" md5="e4db91ceb07ec572fd0fbd7c6f65ffc2"/>
   <macro name="vpcGuiClose" file="vpcGuiClose.bin" md5="242ee4fbabad839f27414bfd2d3cac26"/>
   <macro name="vpcGuiConectar" file="vpcGuiConectar.bin" md5="5fc4139aad2bd476e09924a59063d8ff"/>
   <macro name="vpcGuiDesconectar" file="vpcGuiDesconectar.bin" md5="87a9c91ada6cba5577c3d05e4ffa2ad8"/>
