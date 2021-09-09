@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+<!--Begin Entities-->
+<!ENTITY a59d59c9f9be5ddc0ed315a6ec658b072 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtAquisicao.xml">
+<!ENTITY aa6efa04e2b4e0bf831053872e9343459 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtCommand.xml">
+<!ENTITY affe9a7bc7df06429142367125f4c3794 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtCommandAnswer.xml">
+<!ENTITY adcedb3c0a6ec2a6e15d7968c31751235 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameADDRESS.xml">
+<!ENTITY a24d2ecff654c07414b76265a2a6a896b SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameBody.xml">
+<!ENTITY a569d09f55cc889bbf5016821c583032e SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameCalcCkSum.xml">
+<!ENTITY ae1242287230736c7db207c4b926957bf SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameCkSum.xml">
+<!ENTITY a81dd66322402769e8db48fe54d563552 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameCommand.xml">
+<!ENTITY a762b458522d16ac5b0c8ce000ca7b3dd SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameDelimiter.xml">
+<!ENTITY a2e3ee1eb6e902babdb1b8a9a8ad4cfec SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameIni.xml">
+<!ENTITY acc76ca01a94cba86a224ee04ee785543 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFramePreamble.xml">
+<!ENTITY a44f6186f2be8e6ecf3b009926cc16d24 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtFrameType.xml">
+<!ENTITY afb79ac8efa1ef4024f59c24a764d46ed SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtGuiAtualizar.xml">
+<!ENTITY acd74075a04be349c567604fdb47caf7a SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtGuiConectar.xml">
+<!ENTITY a546ac25b973aea79571d9405b09d49b7 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtGuiDesconectar.xml">
+<!ENTITY acd5bd0a4ac555886dfbe1a0ee7a2f6df SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialClose.xml">
+<!ENTITY af91824a6ee68031575971f60e2a31419 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialCloseAll.xml">
+<!ENTITY a0f57c179463e09ef3242fea1ac2f571d SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialOpen.xml">
+<!ENTITY a76441a0de65953fda9b603237d1038a2 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialRead.xml">
+<!ENTITY a96df604dab010a5c4bff50f76aaa053f SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialStatus.xml">
+<!ENTITY a5cf648ad6f948f2da5a40e54dcabbf07 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtSerialWrite.xml">
+<!ENTITY aef6f76c8c31894d6a1af34665a731d4e SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeDate2Hex.xml">
+<!ENTITY a88b24df423436a1db17fe66b0a09878c SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2Date.xml">
+<!ENTITY a3a31e2f34da5e793b92086b24903fc62 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2Int.xml">
+<!ENTITY a8231a33e246c405086d374ce05c0b222 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2PAscii.xml">
+<!ENTITY a063b22f84a3e380de6240efcc155ac05 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2SReal.xml">
+<!ENTITY acc62890dccac46284d5909302782a0ad SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2Time.xml">
+<!ENTITY a53fa45e091d78f5b6d3eacf9f270b57d SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeHex2UInt.xml">
+<!ENTITY a3807db0e8370fc962272195be1ad26fb SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeInt2Hex.xml">
+<!ENTITY a03b29b0a4702a18267474e565d72c07a SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypePAscii2Hex.xml">
+<!ENTITY a5641baad74ae58546cfb181ce93fb64e SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeSReal2Hex.xml">
+<!ENTITY af7b59a52f2bf8c7aff6b9d17b6b3fbbf SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeTime2Hex.xml">
+<!ENTITY aa3c832c069a8675451bb4ab2e23b07cb SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtTypeUInt2Hex.xml">
+<!ENTITY af52f97daa82280cb23d6b87d5cc59159 SYSTEM "file:///D:/OneDrive - ufu.br/00 VideoAulas/01 Compartilhados/sciININDLibraries/virtualProcessComm_V4/help/pt_BR/hrtVirtual.xml">
+<!--End Entities-->
+]>
+<book version="5.0-subset Scilab" xml:lang="pt_BR"
+      xmlns="http://docbook.org/ns/docbook"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xmlns:svg="http://www.w3.org/2000/svg"
+      xmlns:mml="http://www.w3.org/1998/Math/MathML"
+      xmlns:html="http://www.w3.org/1999/xhtml"
+      xmlns:db="http://docbook.org/ns/docbook">
+  <info xml:id='virtualprocesscomm_manual'>
+    <title>virtualProcessComm</title>
+  </info>
+
+<part xml:id='section_bb5d50aee91ccb9e1d1b4c4dc27a5091'>
+<title>virtualProcessComm</title>
+&a59d59c9f9be5ddc0ed315a6ec658b072;
+&aa6efa04e2b4e0bf831053872e9343459;
+&affe9a7bc7df06429142367125f4c3794;
+&adcedb3c0a6ec2a6e15d7968c31751235;
+&a24d2ecff654c07414b76265a2a6a896b;
+&a569d09f55cc889bbf5016821c583032e;
+&ae1242287230736c7db207c4b926957bf;
+&a81dd66322402769e8db48fe54d563552;
+&a762b458522d16ac5b0c8ce000ca7b3dd;
+&a2e3ee1eb6e902babdb1b8a9a8ad4cfec;
+&acc76ca01a94cba86a224ee04ee785543;
+&a44f6186f2be8e6ecf3b009926cc16d24;
+&afb79ac8efa1ef4024f59c24a764d46ed;
+&acd74075a04be349c567604fdb47caf7a;
+&a546ac25b973aea79571d9405b09d49b7;
+&acd5bd0a4ac555886dfbe1a0ee7a2f6df;
+&af91824a6ee68031575971f60e2a31419;
+&a0f57c179463e09ef3242fea1ac2f571d;
+&a76441a0de65953fda9b603237d1038a2;
+&a96df604dab010a5c4bff50f76aaa053f;
+&a5cf648ad6f948f2da5a40e54dcabbf07;
+&aef6f76c8c31894d6a1af34665a731d4e;
+&a88b24df423436a1db17fe66b0a09878c;
+&a3a31e2f34da5e793b92086b24903fc62;
+&a8231a33e246c405086d374ce05c0b222;
+&a063b22f84a3e380de6240efcc155ac05;
+&acc62890dccac46284d5909302782a0ad;
+&a53fa45e091d78f5b6d3eacf9f270b57d;
+&a3807db0e8370fc962272195be1ad26fb;
+&a03b29b0a4702a18267474e565d72c07a;
+&a5641baad74ae58546cfb181ce93fb64e;
+&af7b59a52f2bf8c7aff6b9d17b6b3fbbf;
+&aa3c832c069a8675451bb4ab2e23b07cb;
+&af52f97daa82280cb23d6b87d5cc59159;
+</part>
+</book>
