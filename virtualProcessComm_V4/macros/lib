@@ -36,11 +36,11 @@
   <macro name="hrtTypeUInt2Hex" file="hrtTypeUInt2Hex.bin" md5="97e281bda8cedb2aadfd2c865a6f8740"/>
   <macro name="vpcBDReadTranslated" file="vpcBDReadTranslated.bin" md5="8b451e3689248cd6f433bdada05d9237"/>
   <macro name="vpcBDWriteTranslated" file="vpcBDWriteTranslated.bin" md5="b7f48d330c47c5b0dfcc5bff7e934bfa"/>
-  <macro name="vpcGui" file="vpcGui.bin" md5="d49dfcdfcf469fc28770dea0c46a49ef"/>
+  <macro name="vpcGui" file="vpcGui.bin" md5="62807f448930159edc4421267d1ea83a"/>
   <macro name="vpcGuiAquisicao" file="vpcGuiAquisicao.bin" md5="1921c59b304cc00051571e08622de6ec"/>
   <macro name="vpcGuiClose" file="vpcGuiClose.bin" md5="242ee4fbabad839f27414bfd2d3cac26"/>
   <macro name="vpcGuiConectar" file="vpcGuiConectar.bin" md5="5fc4139aad2bd476e09924a59063d8ff"/>
   <macro name="vpcGuiDesconectar" file="vpcGuiDesconectar.bin" md5="87a9c91ada6cba5577c3d05e4ffa2ad8"/>
-  <macro name="vpcGuiTrmsView" file="vpcGuiTrmsView.bin" md5="c112dbd3c9fa0c7b3aa6bf517aac5cd5"/>
+  <macro name="vpcGuiTrmsView" file="vpcGuiTrmsView.bin" md5="2c117d74d8bc261ae541d909216e943c"/>
   <macro name="vpcReactInterface" file="vpcReactInterface.bin" md5="a5b5b1b8ce3194ea27f12ff4d5d1e695"/>
 </scilablib>
