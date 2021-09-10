@@ -3,7 +3,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
     doc = hrtConfig.Process;
     select elementoType
         case 'Process'
-            if type(elementoId) == 10 then //Se for String
+            if type(elementoId) == 10 then          //Se for String
                 for i=1:doc.root.children.size
                    xp = xmlXPath(doc.root.children(i), '//'+elementoId);
                    xmlRemove(xp);
@@ -15,7 +15,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
                 end
             end
         case 'Disp'
-            if type(elementoId) == 10 then //Se for String
+            if type(elementoId) == 10 then          //Se for String
                 xp = xmlXPath(doc, '//'+elementoId+'/'+varargin(1));
                 xmlRemove(xp);
             else 
@@ -27,7 +27,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
                 end
              end
         case 'var'
-            if type(elementoId) == 10 then //Se for String
+            if type(elementoId) == 10 then          //Se for String
                 xp = xmlXPath(doc, '//'+elementoId);
             else
                 elementoName = doc.root.children(elementoId).name;
