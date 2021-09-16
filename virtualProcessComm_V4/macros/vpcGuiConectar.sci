@@ -1,4 +1,5 @@
 function vpcGuiConectar()
+    disp("Teste") 
     set('BConectar','Enable','off');
     set('BDesconectar','Enable','on');
     set('porta','Enable','off');
