@@ -1,5 +1,6 @@
 function vpcGuiConectar()
-    disp("Teste") 
+    process_name = x_dialog('Nome do processo','')
+    disp(process_name) 
     set('BConectar','Enable','off');
     set('BDesconectar','Enable','on');
     set('porta','Enable','off');
