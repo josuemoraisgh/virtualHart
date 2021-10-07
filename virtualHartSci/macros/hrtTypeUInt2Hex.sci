@@ -1,7 +1,7 @@
 function result=hrtTypeUInt2Hex(ValorUInt)  
 // Converte inteiro sem sinal para hexa
 // Calling sequence
-// result=hrtTypeUInt2Hex(ValorUInt) 
+// result=hrtTypeUInt2Hex(ValorUInt)  
 // Parameters
 // ValorUInt : Variável que armazena o valor inteiro
 // result : Variável que recebe o valor da função
