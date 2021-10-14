@@ -3,4 +3,16 @@ Foram preenchidos comandos : 6 , 16 , 40 , 130 , 152, 185.
 
 Sprint 2 - Fiquei de fora da divisão das tarefas por não ter assistido aula.
 
-Sprint 3 - CommStatus_Rai e bdVpcInsert_Rai, estão executando sem erros
+Sprint 3 - CommStatus_Rai e bdVpcInsert_Rai - Para testa-los, instalei o pacote de dados 'virtualProcessComm_V4'
+Iniciei a função connect, para que seja possivel funcionar as outras funções. Ambas as funções rodar
+
+
+--> exec('D:\virtualHartSci\virtualHartSci\macros\bdVpcInsert_Rai.sci', -1)
+Warning : redefining function: bdVpcInsert             . Use funcprot(0) to avoid this message
+
+--> exec('D:\virtualHartSci\virtualHartSci\macros\CommStatus_Rai.sci', -1)
+
+Houve Apenas 1 warning na insert, que acredito ser por conta de estar usando o pacote de dados 'virtualProcessComm_V4' , pela primeira vez.
+
+Sprint 4 - Devo fazer a função 'Delete - Process' , Pelo meu entendimento seria adaptar a função "DELETE" do banco de dados na Interface React,
+Erro: "
