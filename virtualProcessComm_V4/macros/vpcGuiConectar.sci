@@ -1,3 +1,4 @@
+'Alteração: utilizar função reativa
 function vpcGuiConectar()
     process_name = x_dialog('Informe nome do processo','')
     if strcmp(process_name,'') == 1  then
