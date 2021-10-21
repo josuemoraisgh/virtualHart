@@ -13,13 +13,13 @@ function varargout = vpcReactInterface(varargin)
     select argn(2)
         case 1 then
             if argn(1) == 1 then
-                varargout = list(vpcBDReadTranslated(varargin(1)));
+                varargout = list(vpcBDReadTranslated(varargin(1)));//LÊ NO BD (idVar)
             elseif isUi then//Escrita informada pelo Callback
-                vpcBDWriteTranslated(varargin(1),get(varargin(1),typeProp));
+                vpcBDWriteTranslated(varargin(1),get(varargin(1),typeProp));//ADICIONA NO BANCO DE DADOS (idVar, trmsData)
             end
         case 2 then//Escrita feita Direta
             vpcBDWriteTranslated(varargin(1),varargin(2));
-            if isUi then set(varargin(1),typeProp,varargin(2)) end;
+            if isUi then set(varargin(1),typeProp,varargin(2)) end;//ATUALIZA TELA (graphic handle, character string / name of the property to set, value to give to the property)
         case 3 then//Escrita indireta
             if type(varargin(3)) == 10 then
                 vpcReactInterface(varargin(1),get(varargin(1),typeProp));

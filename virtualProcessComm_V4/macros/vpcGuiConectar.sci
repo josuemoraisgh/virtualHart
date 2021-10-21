@@ -1,11 +1,13 @@
-'Alteração: utilizar função reativa
+//Alteração: utilizar função reativa
 function vpcGuiConectar()
     process_name = x_dialog('Informe nome do processo','')
     if strcmp(process_name,'') == 1  then
-        bdVpcConect();
-        bdVpcInsert('Process', process_name, '');
-        bdVpcDesconect();    
+        //bdVpcConect();48min
+        //bdVpcInsert('Process', process_name, '');
+        //bdVpcDesconect();    
+        vpcReactInterface(''BNProcesso'',string(process_name),''mainFig'')
         disp('Adicionando: ' + string(process_name))         
+        
     else
         disp('Erro')  
     end    
