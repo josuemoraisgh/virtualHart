@@ -40,6 +40,19 @@ function varargout = vpcReactInterface(varargin)
                 tag = ui.children(i).tag;
                 vpcReactInterface(tag,'ui',ui.children(i));
             end
+        case 4 then//Gui conectar
+            process_name = x_dialog('Informe nome do processo','')
+            bdVpcConect();
+            bdVpcInsert('Process', "process_name", '');
+            bdVpcDesconect();           
+            
+            ui = gcf();
+            
+            for i=1:size(ui.children,1)
+                tag = ui.children(i).tag;
+                vpcReactInterface(tag,'ui',ui.children(i));
+            end
+                        
         else
             disp('vpcReactInterface - Erro');
             exit();

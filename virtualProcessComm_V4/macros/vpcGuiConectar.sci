@@ -2,12 +2,14 @@
 function vpcGuiConectar()
     process_name = x_dialog('Informe nome do processo','')
     if strcmp(process_name,'') == 1  then
-        //bdVpcConect();48min
-        //bdVpcInsert('Process', process_name, '');
-        //bdVpcDesconect();    
-        vpcReactInterface(''BNProcesso'',string(process_name),''mainFig'')
-        disp('Adicionando: ' + string(process_name))         
+        bdVpcConect();
+        bdVpcInsert('Process', process_name, '');
+        bdVpcDesconect();    
+        //vpcReactInterface('BNProcesso',string(process_name));
+        vpcReactInterface("protocol","ui","mainFig");
+        //set(varargin(1),"String",varargin(2));
         
+        disp('Adicionando: ' + string(process_name));
     else
         disp('Erro')  
     end    
