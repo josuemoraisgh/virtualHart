@@ -2,7 +2,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
     global hrtConfig
     doc = hrtConfig.Process;
     select elementoType
-        case 'Process'
+        case 'Process'          // caso for process
             if type(elementoId) == 10 then          //Se for String
                 for i=1:doc.root.children.size
                    xp = xmlXPath(doc.root.children(i), '//'+elementoId);
@@ -14,7 +14,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
                                       .children(elementoId+2));
                 end
             end
-        case 'Disp'
+        case 'Disp'   // caso for disp
             if type(elementoId) == 10 then          //Se for String
                 xp = xmlXPath(doc, '//'+elementoId+'/'+varargin(1));
                 xmlRemove(xp);
@@ -26,7 +26,7 @@ function bdVpcDelete(elementoType, elementoId, varargin)
                                       .children(elementoId));
                 end
              end
-        case 'var'
+        case 'var'  // caso for var
             if type(elementoId) == 10 then          //Se for String
                 xp = xmlXPath(doc, '//'+elementoId);
             else
@@ -35,6 +35,6 @@ function bdVpcDelete(elementoType, elementoId, varargin)
             end
             xmlRemove(xp);
         else
-            disp('bdVpcInsert - Opção não Encontrada!!');
+            disp('bdVpcInsert - Opção não Encontrada!');
     end
 endfunction
