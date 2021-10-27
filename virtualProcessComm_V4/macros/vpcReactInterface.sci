@@ -41,16 +41,16 @@ function varargout = vpcReactInterface(varargin)
                 vpcReactInterface(tag,'ui',ui.children(i));
             end
         case 4 then//Gui conectar
+            //Ler novo processo
             process_name = x_dialog('Informe nome do processo','')
             bdVpcConect();
-            bdVpcInsert('Process', "process_name", '');
+            bdVpcInsert('Process', "teste12", '');
             bdVpcDesconect();           
             
-            ui = gcf();
-            
-            for i=1:size(ui.children,1)
-                tag = ui.children(i).tag;
-                vpcReactInterface(tag,'ui',ui.children(i));
+            //Atualizar parte da tela
+            ui = gcf();                  
+            for i=1:size(ui.children,1) 
+                set(varargin(1),'String',string(vpcBDReadTranslated(varargin(1))));
             end
                         
         else
