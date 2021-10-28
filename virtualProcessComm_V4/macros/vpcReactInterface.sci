@@ -36,6 +36,14 @@ function varargout = vpcReactInterface(varargin)
                         set(varargin(1),typeProp,string(vpcBDReadTranslated(varargin(1))));
                     end
                 end
+            case 4 then//DELETE PROCESS 
+                process_name = x_dialog('Informe o Processo a ser deletado')
+                bdVpcConect();
+                vpcBDelete();
+                bdVpcDesconect();
+                ui = gcf();
+            end
+                
             end 
             for i=1:size(ui.children,1)
                 tag = ui.children(i).tag;
