@@ -1,4 +1,4 @@
-/ Faz a conversão do tipo Hexadecimal para Time
+// Faz a conversão do tipo Hexadecimal para Time
 // Calling Sequence
 // v=hrtTypeHex2Time(buf)
 // Parameters
