@@ -1,11 +1,11 @@
-// Faz a conversão de Hexadecimal para Float
+// Faz a conversão de Float para Hexadecimal
 // Calling Sequence
-// v=hrtTypeHex2SReal(buf)
+// v=hrtTypeSReal2Hex(buf)
 // Parameters
 // v : Valor em Float
 // buf : string correspondente a representação hexadecimal
 // Description
-// Função que faz a conversão de número em Real para Hexadecimal
+// Função que faz a conversão de número em Float para Hexadecimal
 // Examples
 //
 //         hrtTypeSReal2Hex(15)
