@@ -1,3 +1,21 @@
+// Faz a conversão de Hexadecimal para Float
+// Calling Sequence
+// v=hrtTypeHex2SReal(buf)
+// Parameters
+// v : Valor em Float
+// buf : string correspondente a representação hexadecimal
+// Description
+// Função que faz a conversão de número em Real para Hexadecimal
+// Examples
+//
+//         hrtTypeSReal2Hex(15)
+//         ans  = "41 70 00 00"
+// 
+// Authors
+// Josué Silva de Morais - josue@ufu.br
+// Geovani Almeida Estevam - geovani.estevam@ufu.br
+// www.ufu.br
+
 function result=hrtTypeSReal2Hex(strFloat)
     ValorFloat = strtod(strFloat);
     if(ValorFloat == %nan) then 
