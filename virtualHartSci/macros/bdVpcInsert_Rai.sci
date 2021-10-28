@@ -1,4 +1,4 @@
-//Executando sem erros, respostestá sendo -1, preciso entender melhor o código em detalhes para ter mais garantia do fucionamento.
+
 function bdVpcInsert(elementoType, elementoName, varargin)
     global hrtConfig
     doc = hrtConfig.Process;

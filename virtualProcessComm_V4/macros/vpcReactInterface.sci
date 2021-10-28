@@ -1,18 +1,4 @@
-function bdVpcDelete(elementoType, elementoId, varargin)//Apenas primeiro teste pra ver que erros estão acontecendo , porém erro ao executar.
-    global varBDados
-    process = varBDados.Process;
-    select elementoType
-        case 'Process'
-            if type(elementoId) == 10 then //Se string: elementoId=processName
-                xp = xmlXPath(process,'child::*/child::'+elementoId);
-                xmlRemove(xp);
-            else        
-                for i=1:process.root.children.size
-                    xmlRemove(process.root.children(i)...
-                                      .children(elementoId+2));
-                end
-            end
-            
+
 function varargout = vpcReactInterface(varargin)
     select get(varargin(1),'Style')
         case 'popupmenu' then
