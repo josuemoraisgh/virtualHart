@@ -1,0 +1,11 @@
+Sprint 1 - Mudanças feitas no arquivo hrtComand.xls.
+Foram preenchidos comandos : 6 , 16 , 40 , 130 , 152, 185.
+
+Sprint 2 - Fiquei de fora da divisão das tarefas por não ter assistido aula.
+
+Sprint 3 - CommStatus_Rai e bdVpcInsert_Rai - Para testa-los, instalei o pacote de dados 'virtualProcessComm_V4'
+Iniciei a função connect, Chamei ambas as funções e compilaram sem problemas
+
+
+Sprint 4 - Criei a função vpcBDelete(), que basicamente chama a função bdVpcDelete(elementoType, elementoId, varargin), que já estava construída.
+e coloquei ela dentro da interface.

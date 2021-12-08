@@ -1,3 +1,4 @@
+
 function bdVpcInsert(elementoType, elementoName, varargin)
     global hrtConfig
     doc = hrtConfig.Process;
