@@ -1,0 +1,6 @@
+Primeira acesso ao GitHub 11/05/2022
+
+* Download Git
+* Criando clone do repositório VirtualHart
+* Fazendo test de Branch
+* Primeiro Commit
