@@ -1,16 +1,23 @@
 //global
-import 'dart:ffi';
 
 var c = 2;
 
 void main() {
-  String d = "ola";
-  print(d);
-  print(soma(b: c, a: 3));
+  somaClass a = somaClass(a: 10, b: 10);
+  print(a.value());
 }
 
-int soma({final int a = 8, final int b = 12}) {
+int soma({required var a, required var b, var c, var d, var e}) {
   var c;
   c = b + a;
   return c;
+}
+
+class somaClass {
+  late int a;
+  int b;
+  somaClass({required this.b, required this.a});
+  int value() {
+    return a + b;
+  }
 }
